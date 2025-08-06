@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop: Automatiza con IA y Aspel SAE</title>
+    <!-- Incluyendo el CDN de Tailwind CSS para un diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font "Inter" para una tipografía moderna y legible -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        /* Color naranja personalizado */
+        .bg-gimex-orange {
+            background-color: #ff914d;
+        }
+        .text-gimex-orange {
+            color: #ff914d;
+        }
+        .border-gimex-orange {
+            border-color: #ff914d;
+        }
+        .bg-gimex-light-orange {
+            background-color: #fffaf0;
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        /* Animación para los íconos */
+        .icon-bounce {
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="bg-gray-800 text-white py-16 sm:py-24 md:py-32" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x1080/4B5563/FFFFFF?text=Imagen+de+fondo+para+el+Hero+Section'); background-position: center; background-size: cover;">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
+                Descubre cómo la IA puede transformar tu empresa
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl font-medium mb-6">
+                🧠 Workshop presencial: <span class="text-gimex-orange">“Más allá de lo básico – IA para Aspel SAE”</span>
+            </p>
+            <p class="text-md sm:text-lg mb-8 max-w-2xl mx-auto">
+                Aprende paso a paso a usar ChatGPT con tus reportes de SAE, incluso si nunca has usado inteligencia artificial.
+            </p>
+            <p class="text-sm sm:text-base font-light italic mb-12 max-w-2xl mx-auto">
+                🔓 No necesitas saber programación. Solo traer tu archivo… y abrir la mente.
+            </p>
+            <a href="#formulario" class="inline-block bg-gimex-orange text-white text-lg sm:text-xl font-bold py-4 px-10 rounded-full shadow-lg hover:bg-orange-600 focus:outline-none focus:ring-4 focus:ring-orange-300 transform transition-transform duration-200 hover:scale-105">
+                👉 ¡Aparta tu lugar ahora!
+            </a>
+        </div>
+    </header>
+
+    <!-- Beneficios Principales Section -->
+    <section class="py-16 sm:py-24 bg-gimex-light-orange">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12">
+                ✅ ¿Qué vas a lograr en este workshop?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4 text-gimex-orange">📊</span>
+                    <h3 class="text-xl font-semibold mb-2">Interpretar reportes</h3>
+                    <p class="text-gray-600">Analiza tus propios reportes de ventas, clientes e inventarios con IA para tomar mejores decisiones.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4 text-gimex-orange">💬</span>
+                    <h3 class="text-xl font-semibold mb-2">Comunicación automatizada</h3>
+                    <p class="text-gray-600">Redacta correos, promociones y mensajes automáticos con ChatGPT en segundos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4 text-gimex-orange">🔧</span>
+                    <h3 class="text-xl font-semibold mb-2">Ahorro de tiempo</h3>
+                    <p class="text-gray-600">Ahorra tiempo valioso en tareas administrativas repetitivas y enfócate en el crecimiento de tu negocio.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4 text-gimex-orange">🚀</span>
+                    <h3 class="text-xl font-semibold mb-2">Estrategias de IA</h3>
+                    <p class="text-gray-600">Aprende cómo las empresas líderes usan la IA para automatizar sus procesos y obtén una ventaja competitiva.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4 text-gimex-orange">🧩</span>
+                    <h3 class="text-xl font-semibold mb-2">Demo práctica</h3>
+                    <p class="text-gray-600">Vive una demo práctica y guiada con datos reales de Aspel SAE que te mostrará el potencial de la IA.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4 text-gimex-orange">🎓</span>
+                    <h3 class="text-xl font-semibold mb-2">Habilidades aplicables</h3>
+                    <p class="text-gray-600">Te llevas habilidades prácticas y aplicables desde el primer día, sin necesidad de ser un experto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Para quién es? Section -->
+    <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12">
+                🔵 ¿Para quién es este workshop?
+            </h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                Este evento es para ti si eres:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4">👩‍💼</span>
+                    <h3 class="text-xl font-semibold mb-2">Contador/a</h3>
+                    <p class="text-gray-600">Que usa Aspel SAE y quiere optimizar tiempos y procesos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4">👨‍💼</span>
+                    <h3 class="text-xl font-semibold mb-2">Emprendedor/a</h3>
+                    <p class="text-gray-600">Con procesos administrativos que podrían automatizarse y crecer.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <span class="text-5xl mb-4">🏢</span>
+                    <h3 class="text-xl font-semibold mb-2">PYME</h3>
+                    <p class="text-gray-600">Que quiere usar IA sin contratar desarrolladores ni gastar más.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido del Workshop Section -->
+    <section class="py-16 sm:py-24 bg-gimex-light-orange">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+                🟢 Contenido del Workshop
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold mb-4 text-gimex-orange">📘 Módulo 1: Pierde el miedo a la IA</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>¿Qué es ChatGPT y cómo se usa sin ser técnico?</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold mb-4 text-gimex-orange">📊 Módulo 2: Analiza tus reportes de SAE con IA</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Detecta oportunidades ocultas en ventas, productos y clientes</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold mb-4 text-gimex-orange">📩 Módulo 3: Usa IA como tu asistente operativo</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Redacta correos, recordatorios e instrucciones en segundos</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold mb-4 text-gimex-orange">🧪 DEMO EN VIVO GUIADA</h3>
+                    <p class="text-gray-700">Usaremos un reporte de ventas real y lo analizaremos con ChatGPT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Exclusivo Section -->
+    <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">
+                🧡 Bonus exclusivo
+            </h2>
+            <div class="bg-gimex-orange text-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-4">
+                    🎁 Incluye acceso al Kit “Automatiza tu negocio con IA en 15 minutos”
+                </h3>
+                <p class="text-lg font-light">
+                    Un descargable con herramientas, prompts listos y flujos aplicables a tu día a día.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles del Evento Section -->
+    <section class="py-16 sm:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">
+                📍 Detalles del evento
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gimex-orange mb-2">Fecha</h3>
+                    <p class="text-gray-700">[Personaliza]</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gimex-orange mb-2">Lugar</h3>
+                    <p class="text-gray-700">[Nombre del recinto / ciudad / estado]</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gimex-orange mb-2">Horario</h3>
+                    <p class="text-gray-700">[Ej. 9:00 a.m. a 12:00 p.m.]</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gimex-orange mb-2">Incluye</h3>
+                    <p class="text-gray-700">Desayuno ligero y materiales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Registro Section -->
+    <section id="formulario" class="py-16 sm:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">
+                📥 ¡Aparta tu lugar hoy mismo!
+            </h2>
+            <p class="text-center text-gray-600 mb-8 max-w-xl mx-auto">
+                Cupo limitado para asegurar atención personalizada.
+            </p>
+            
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-100">
+                <form action="#" method="POST" enctype="multipart/form-data" class="space-y-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+                        <input type="text" name="nombre" id="nombre" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gimex-orange focus:ring-gimex-orange">
+                    </div>
+                    <div>
+                        <label for="correo" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                        <input type="email" name="correo" id="correo" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gimex-orange focus:ring-gimex-orange">
+                    </div>
+                    <div>
+                        <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono (WhatsApp)</label>
+                        <input type="tel" name="telefono" id="telefono" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gimex-orange focus:ring-gimex-orange">
+                    </div>
+                    <div>
+                        <label for="tipo_usuario" class="block text-sm font-medium text-gray-700">¿Eres contador, emprendedor o empresa?</label>
+                        <select name="tipo_usuario" id="tipo_usuario" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gimex-orange focus:ring-gimex-orange">
+                            <option value="">Selecciona una opción</option>
+                            <option value="contador">Contador/a</option>
+                            <option value="emprendedor">Emprendedor/a</option>
+                            <option value="empresa">Empresa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="usa_sae" class="block text-sm font-medium text-gray-700">¿Ya usas Aspel SAE?</label>
+                        <select name="usa_sae" id="usa_sae" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gimex-orange focus:ring-gimex-orange">
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="archivo_ventas" class="block text-sm font-medium text-gray-700">
+                            (Opcional) Sube tu archivo de ventas si quieres usarlo en la demo
+                        </label>
+                        <input type="file" name="archivo_ventas" id="archivo_ventas" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gimex-light-orange file:text-gimex-orange hover:file:bg-orange-100">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full bg-gimex-orange text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg hover:bg-orange-600 focus:outline-none focus:ring-4 focus:ring-orange-300 transform transition-transform duration-200 hover:scale-105">
+                            Quiero participar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantía al pie de página -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">🛡 Garantía emocional</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300">
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-gimex-orange">🔒</span>
+                    <p>No necesitas experiencia previa en IA</p>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-gimex-orange">💼</span>
+                    <p>Evento con respaldo de Consultoría GIMEX, expertos en Aspel</p>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-gimex-orange">🎓</span>
+                    <p>Te llevas habilidades aplicables desde el primer día</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
